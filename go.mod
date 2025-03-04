@@ -5,6 +5,8 @@ go 1.23.1
 require (
 	github.com/google/martian/v3 v3.3.3
 	github.com/miekg/dns v1.1.63
+	github.com/oschwald/geoip2-golang v1.11.0
+	github.com/projectdiscovery/cdncheck v1.1.0
 	github.com/projectdiscovery/subfinder/v2 v2.6.8
 )
 
@@ -61,11 +63,11 @@ require (
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.3-0.20240618155329-98d742f6907a // indirect
 	github.com/nwaples/rardecode v1.1.3 // indirect
+	github.com/oschwald/maxminddb-golang v1.13.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
-	github.com/projectdiscovery/cdncheck v1.1.0 // indirect
 	github.com/projectdiscovery/chaos-client v0.5.2 // indirect
 	github.com/projectdiscovery/dnsx v1.2.1 // indirect
 	github.com/projectdiscovery/fastdialer v0.2.14 // indirect

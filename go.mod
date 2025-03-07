@@ -3,6 +3,7 @@ module github.com/BreakOnCrash/opendast
 go 1.23.1
 
 require (
+	github.com/google/gopacket v1.1.19
 	github.com/google/martian/v3 v3.3.3
 	github.com/miekg/dns v1.1.63
 	github.com/oschwald/geoip2-golang v1.11.0

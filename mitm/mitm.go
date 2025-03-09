@@ -1,4 +1,4 @@
-package main
+package mitm
 
 import (
 	"crypto/tls"
@@ -15,11 +15,8 @@ import (
 
 var defaultTimeout = 5 * time.Second
 
-func main() {
+func RunDemo(certFile, keyFile, parentProxy string) {
 	skipTLSVerify := true
-	parentProxy := ""
-	certFile := "./ca.pem"
-	keyFile := "./ca.key"
 
 	proxy := martian.NewProxy()
 	proxy.SetRoundTripper(&http.Transport{

@@ -3,12 +3,15 @@ module github.com/BreakOnCrash/opendast
 go 1.23.1
 
 require (
+	github.com/PaesslerAG/gval v1.2.4
 	github.com/google/gopacket v1.1.19
 	github.com/google/martian/v3 v3.3.3
 	github.com/miekg/dns v1.1.63
 	github.com/oschwald/geoip2-golang v1.11.0
 	github.com/projectdiscovery/cdncheck v1.1.0
 	github.com/projectdiscovery/subfinder/v2 v2.6.8
+	golang.org/x/net v0.33.0
+	golang.org/x/text v0.21.0
 )
 
 require (
@@ -88,6 +91,7 @@ require (
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/shirou/gopsutil/v3 v3.23.7 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
+	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/tidwall/btree v1.6.0 // indirect
 	github.com/tidwall/buntdb v1.3.0 // indirect
@@ -114,12 +118,10 @@ require (
 	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/exp v0.0.0-20230420155640-133eef4313cb // indirect
 	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/oauth2 v0.11.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/term v0.27.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	golang.org/x/tools v0.22.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect

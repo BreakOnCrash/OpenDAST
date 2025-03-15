@@ -69,15 +69,15 @@ func ParseJSCode(jsCode, funcname string) (string, error) {
 		return "", errors.New("not found function")
 	}
 
-	var arguments string
+	var arguments []string
 	for _, arg := range callExp.ArgumentList {
 		paramStr := expressionToString(arg, localvalues)
 		if paramStr != "" {
-			arguments = arguments + "," + paramStr
+			arguments = append(arguments, paramStr)
 		}
 	}
 
-	return arguments, nil
+	return strings.Join(arguments, ","), nil
 }
 
 // analyzeCallExpression 分析函数调用
@@ -101,7 +101,7 @@ func expressionToString(expr ast.Expression, localvalues map[string]ast.Expressi
 	case *ast.ArrayLiteral:
 		return arrayLiteralToString(e, localvalues)
 	case *ast.StringLiteral:
-		return fmt.Sprintf("%q", e.Value)
+		return fmt.Sprintf("%q", strings.TrimSpace(e.Value))
 	case *ast.NumberLiteral:
 		return fmt.Sprintf("%v", e.Value)
 	case *ast.BooleanLiteral:

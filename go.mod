@@ -7,6 +7,7 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/google/gopacket v1.1.19
 	github.com/google/martian/v3 v3.3.3
+	github.com/mattn/go-sqlite3 v1.14.24
 	github.com/miekg/dns v1.1.63
 	github.com/oschwald/geoip2-golang v1.11.0
 	github.com/projectdiscovery/cdncheck v1.1.0
